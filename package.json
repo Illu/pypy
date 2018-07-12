@@ -1,15 +1,15 @@
 {
   "name": "pypy",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Pyramids everywhere",
   "main": "pyramid.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Maxime Nory",
-    "license": "ISC",
-    "bin": {
-	"pypy": "./index.js"
-    }
+  "license": "WTFPL",
+  "bin": {
+	  "pypy": "./index.js"
+  }
 }
