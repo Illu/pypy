@@ -14,6 +14,10 @@ const generatePyramid = (size, emoji) => {
     console.log("Pyramid can't be smaller than 2 emojis");
     return;
   }
+  if (isNaN(Number(size))){
+    console.log("Size must be a number");
+    return;
+  }
   for (let i = 1; i < size * 2; i++) {
     let n = i > size ? size * 2 - i : i;
     console.log((noSpace ? emoji : `${emoji} `).repeat(n));
