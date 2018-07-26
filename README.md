@@ -17,29 +17,35 @@ $ yarn global add pypy
 
 $ pypy 10 💩
 
-💩 
-💩 💩 
-💩 💩 💩 
-💩 💩 💩 💩 
-💩 💩 💩 💩 💩 
-💩 💩 💩 💩 💩 💩 
-💩 💩 💩 💩 💩 💩 💩 
-💩 💩 💩 💩 💩 💩 💩 💩 
-💩 💩 💩 💩 💩 💩 💩 💩 💩 
-💩 💩 💩 💩 💩 💩 💩 💩 💩 💩 
-💩 💩 💩 💩 💩 💩 💩 💩 💩 
-💩 💩 💩 💩 💩 💩 💩 💩 
-💩 💩 💩 💩 💩 💩 💩 
-💩 💩 💩 💩 💩 💩 
-💩 💩 💩 💩 💩 
-💩 💩 💩 💩 
-💩 💩 💩 
-💩 💩 
-💩 
+💩
+💩 💩
+💩 💩 💩
+💩 💩 💩 💩
+💩 💩 💩 💩 💩
+💩 💩 💩 💩 💩 💩
+💩 💩 💩 💩 💩 💩 💩
+💩 💩 💩 💩 💩 💩 💩 💩
+💩 💩 💩 💩 💩 💩 💩 💩 💩
+💩 💩 💩 💩 💩 💩 💩 💩 💩 💩
+💩 💩 💩 💩 💩 💩 💩 💩 💩
+💩 💩 💩 💩 💩 💩 💩 💩
+💩 💩 💩 💩 💩 💩 💩
+💩 💩 💩 💩 💩 💩
+💩 💩 💩 💩 💩
+💩 💩 💩 💩
+💩 💩 💩
+💩 💩
+💩
 ```
+
+Pypy will automatically copy the pyramid in your clipboard, unless the `--no-copy` option is specified.
 
 ## Options
 
 ### `--no-space`
 
 No space between items
+
+### `--no-copy`
+
+Don't copy the pyramid in your clipboard
