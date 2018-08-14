@@ -1,4 +1,10 @@
-# PYPY
+<h1 align="center">
+  PYPY
+</h1>
+
+[![WTFPL License][license-badge]][license-url]
+[![npm](https://img.shields.io/npm/v/pypy.svg?style=flat
+)](https://www.npmjs.com/package/pypy)
 
 Generate pyramids.
 
@@ -49,3 +55,11 @@ No space between items
 ### `--no-copy`
 
 Don't copy the pyramid in your clipboard
+
+## Licence ##
+WTFPL License
+
+See [LICENSE](LICENSE)
+
+[license-badge]: http://img.shields.io/badge/license-WTFPL-green.svg?style=flat
+[license-url]: LICENSE
