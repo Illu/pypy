@@ -1,26 +1,47 @@
 #!/usr/bin/env node
 
 const cp = require("copy-paste");
+const ArgumentParser = require("argparse").ArgumentParser;
+const {version} = require('./package.json');
 
-const params = process.argv;
-params.splice(0, 2);
-if (!params || params.length < 2) {
-  console.log('Usage: pypy 3 😎');
-  return;
-}
-
-const noSpace = params.includes('--no-space');
-const noCopy = params.includes('--no-copy');
-
-const generatePyramid = (size, emoji) => {
-  if (size < 2) {
-    console.log("Pyramid can't be smaller than 2 emojis");
-    return;
+const parser = new ArgumentParser({
+  version,
+  addHelp: true,
+  description: 'Generate pyramids'
+});
+parser.addArgument(
+  'size',
+  { 
+    type: 'int',
+    help: 'Size of the pyramid',
+  })
+parser.addArgument(
+  'emoji',
+  {
+    help: 'emoji/text to be displayed inside the pyramid',
+  })
+parser.addArgument(
+  [ '-s', '--no-space' ],
+  {
+    default: false,
+    nargs: 0,
+    help: 'Remove space between emojis',
+    dest: 'noSpace',
   }
-  if (isNaN(Number(size))){
-    console.log("Size must be a number");
-    return;
+);
+parser.addArgument(
+  [ '-c', '--no-copy' ],
+  {
+    default: false,
+    nargs: 0,
+    help: "Disable copying the pyramid to the clipboard",
+    dest: 'noCopy'
   }
+);
+
+const args = parser.parseArgs();
+
+const generatePyramid = ({size, emoji, noSpace, noCopy}) => {
   const result = [];
   for (let i = 1; i < size * 2; i++) {
     let n = i > size ? size * 2 - i : i;
@@ -32,4 +53,4 @@ const generatePyramid = (size, emoji) => {
   }
 };
 
-generatePyramid(...params);
+generatePyramid(args);
