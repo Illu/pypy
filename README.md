@@ -44,17 +44,17 @@ $ pypy 10 💩
 💩
 ```
 
-Pypy will automatically copy the pyramid in your clipboard, unless the `--no-copy` option is specified.
+Pypy will automatically copy the pyramid to your clipboard, unless the `--no-copy` option is specified.
 
 ## Options
 
-### `--no-space`
+### `-s` `--no-space`
 
 No space between items
 
-### `--no-copy`
+### `-c` `--no-copy`
 
-Don't copy the pyramid in your clipboard
+Don't copy the pyramid to the clipboard
 
 ## Licence ##
 WTFPL License
